@@ -1,4 +1,4 @@
-def binary_search(array, target):                                # this fumction gibe us logarithmic speed O(logN)
+def binary_search(array, target):                                # this function give us logarithmic speed O(N*logM)
     low = 0                                                      # first index of array
     high = len(array) - 1                                        # remember that len starts with '1'
     
