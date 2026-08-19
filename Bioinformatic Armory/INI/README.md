@@ -17,5 +17,5 @@ pip install biopython
 
 Run the script by piping your Rosalind dataset into it:
 ```bash
-cat rosalind_ini.txt | python IBI.py
+python INI.py < rosalind_ini.txt
 ```
