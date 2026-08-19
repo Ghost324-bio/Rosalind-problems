@@ -29,7 +29,7 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **DNA** | Counting DNA Nucleotides | String Manipulation | $O(N)$ | $O(1)$ | [DNA.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/d3a1bd390d54428e91a1e4cd358e55ffb84b0529/Bioinformatic%20Stronghold/DNA.py) |
 | **RNA** | Transcribing DNA into RNA | String Manipulation | $O(N)$ | $O(N)$ | [RNA.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/d355da5f1a76a7ec1a38d2deb93170e8b12755d9/Bioinformatic%20Stronghold/RNA.py) |
 | **REVC** | Complementing a Strand of DNA | String Manipulation | $O(N)$ | $O(N)$ | [REVC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/3f44d451583cdf0d52aacee8b718013ebef124ca/Bioinformatic%20Stronghold/REVC.py) |
-| **INI** | Intro to Bioinformatics Armory | Biopython Basics | $O(N)$ | $O(1)$ | [solution.py](./src/Bioinformatic_Armory/ini.py) |
+| **INI** | Intro to Bioinformatics Armory | Biopython Basics | $O(N)$ | $O(1)$ | [INI.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/c1cab8cad9a297d06e0d9a4d2a9ddbf5baa5118e/Bioinformatic%20Armory/INI/INI.py) |
 | **GBK** | GenBank Introduction | NCBI Entrez API | $O(1)$ | $O(1)$ | [solution.py](./src/Bioinformatic_Armory/GBK.py) |
 | **FIBO** | Fibonacci Numbers | Dynamic Programming | $O(n)$ | $O(1)$ | [solution.py](./src/Algorithmic_Heights/FIBO.py) |
 | **BINS** | Binary Search | Binary Search | $O(\log N)$ | $O(1)$ | [solution.py](./src/Algorithmic_Heights/BINS.py) |
