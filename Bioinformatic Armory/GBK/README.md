@@ -33,7 +33,7 @@ Anthoxanthum
 ```
 
 ### 3. Configure Your Credentials
-Before executing the script, open `script.py` and replace the placeholder email with your actual email address:
+Before executing the script, open `GBK.py` and replace the placeholder email with your actual email address:
 ```python
 Entrez.email = "your_email@example.com"
 ```
@@ -44,16 +44,16 @@ Run the script using the system console by piping the input dataset into the pro
 
 **On Windows (Command Prompt / `cmd`):**
 ```bash
-python script.py < rosalind_gbk.txt
+python GBK.py < rosalind_gbk.txt
 ```
 *Alternatively, using the Windows `type` command:*
 ```bash
-type rosalind_gbk.txt | python script.py
+type rosalind_gbk.txt | python GBK.py
 ```
 
 **On Linux / macOS:**
 ```bash
-cat rosalind_gbk.txt | python script.py
+cat rosalind_gbk.txt | python GBK.py
 ```
 
 ### 5. Output
