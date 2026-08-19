@@ -32,6 +32,6 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **INI** | Intro to Bioinformatics Armory | Biopython Basics | $O(N)$ | $O(1)$ | [INI.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/c1cab8cad9a297d06e0d9a4d2a9ddbf5baa5118e/Bioinformatic%20Armory/INI/INI.py) |
 | **GBK** | GenBank Introduction | NCBI Entrez API | $O(1)$ | $O(1)$ | [GBK.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/b011946e81dc7f80cf2874b73ce8035535d7e52b/Bioinformatic%20Armory/GBK/GBK.py) |
 | **FIBO** | Fibonacci Numbers | Dynamic Programming | $O(n)$ | $O(1)$ | [FIBO.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/886cde032dad2a115805985967b5e735b4f51419/Algorithmic%20heights/FIBO.py) |
-| **BINS** | Binary Search | Binary Search | $O(\log N)$ | $O(1)$ | [solution.py](./src/Algorithmic_Heights/BINS.py) |
+| **BINS** | Binary Search | Binary Search | $O(\log N)$ | $O(M)$ | [BINS.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/a75a261f41616f5055a8fff9fa9edb7e01795d31/Algorithmic%20heights/BINS.py) |
 
 ---
