@@ -60,4 +60,3 @@ cat rosalind_gbk.txt | python script.py
 The script will output a single integer representing the total number of matching nucleotide entries found in GenBank:
 ```text
 4
-```text
