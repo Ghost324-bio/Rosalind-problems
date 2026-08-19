@@ -22,7 +22,7 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **INI1** | Installing Python | Python Basics | $O(1)$ | $O(1)$ | [INI1.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/05935aeb2f6131897aa72a27263a06facb387a02/Python%20Village/INI1.py) |
 | **INI2** | Variables and Some Arithmetic | Basic Arithmetic | $O(1)$ | $O(1)$ | [INI2.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/05935aeb2f6131897aa72a27263a06facb387a02/Python%20Village/INI2.py) |
-| **INI3** | Strings and Slices | String Slicing | $O(N)$ | $O(N)$ | [solution.py](src/Python_Village/INI3.py) |
+| **INI3** | Strings and Slices | String Slicing | $O(N)$ | $O(N)$ | [INI3.py]([src/Python_Village/INI3.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/47d7c9b5b24e92f7290d841633e7d69abea0aafa/Python%20Village/INI3.py)) |
 | **INI4** | Conditions and Loops | Control Flow | $O(N)$ | $O(1)$ | [solution.py](./src/Python_Village/INI4.py) |
 | **INI5** | Working with Files | File I/O | $O(N)$ | $O(1)$ | [solution.py](./src/Python_Village/INI5.py) |
 | **INI6** | Dictionaries | Hash Tables | $O(N)$ | $O(N)$ | [solution.py](./src/Python_Village/INI6.py) |
@@ -35,29 +35,3 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **BINS** | Binary Search | Binary Search | $O(\log N)$ | $O(1)$ | [solution.py](./src/Algorithmic_Heights/BINS.py) |
 
 ---
-
-## 🛠️ Project Structure & Setup
-
-```text
-rosalind-solutions/
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── dna/
-│   │   ├── solution.py
-│   │   └── test_dna.py
-│   └── ...
-```
-
-### Prerequisites & Execution
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/rosalind-solutions.git
-   cd rosalind-solutions
-   ```
-
-2. **Run tests:**
-   ```bash
-   pytest
-   ```
