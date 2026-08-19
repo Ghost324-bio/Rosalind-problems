@@ -20,8 +20,8 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 
 | ID | Title | Topic | Time | Space | Solution |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| **INI1** | Installing Python | Python Basics | $O(1)$ | $O(1)$ | [solution.py](src/Python_Village/INI1.py) |
-| **INI2** | Variables and Some Arithmetic | Basic Arithmetic | $O(1)$ | $O(1)$ | [solution.py](src/Python_Village/INI2.py) |
+| **INI1** | Installing Python | Python Basics | $O(1)$ | $O(1)$ | [solution.py](Python_Village/INI1.py) |
+| **INI2** | Variables and Some Arithmetic | Basic Arithmetic | $O(1)$ | $O(1)$ | [solution.py](Python_Village/INI2.py) |
 | **INI3** | Strings and Slices | String Slicing | $O(N)$ | $O(N)$ | [solution.py](src/Python_Village/INI3.py) |
 | **INI4** | Conditions and Loops | Control Flow | $O(N)$ | $O(1)$ | [solution.py](./src/Python_Village/INI4.py) |
 | **INI5** | Working with Files | File I/O | $O(N)$ | $O(1)$ | [solution.py](./src/Python_Village/INI5.py) |
