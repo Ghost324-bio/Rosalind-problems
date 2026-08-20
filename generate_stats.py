@@ -1,8 +1,10 @@
 import os
-import matplotlib.pyplot as plt
+import json
+from datetime import datetime
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# 1. Сбор данных (подсчет файлов в папках)
+# 1. Подсчет текущего количества задач
 categories = {
     'Python Village': 'src/Python_Village',
     'Bioinformatics Stronghold': 'src/Bioinformatic_Stronghold',
@@ -10,40 +12,47 @@ categories = {
     'Algorithmic Heights': 'src/Algorithmic_Heights'
 }
 
-data = {}
 total_solved = 0
-
-for category, path in categories.items():
+for path in categories.values():
     if os.path.exists(path):
-        # Считаем только файлы с решениями .py
-        count = len([f for f in os.listdir(path) if f.endswith('.py')])
-        data[category] = count
-        total_solved += count
-    else:
-        data[category] = 0
+        total_solved += len([f for f in os.listdir(path) if f.endswith('.py')])
 
-df = pd.DataFrame(list(data.items()), columns=['Category', 'Solved'])
+# 2. Работа с файлом истории
+os.makedirs('assets', exist_ok=True)
+history_file = 'assets/history.json'
 
-# 2. Отрисовка гистограммы в Matplotlib
+if os.path.exists(history_file):
+    with open(history_file, 'r', encoding='utf-8') as f:
+        history = json.load(f)
+else:
+    history = {}
+
+# Записываем или обновляем значение на сегодняшнее число
+today = datetime.now().strftime('%Y-%m-%d')
+history[today] = total_solved
+
+with open(history_file, 'w', encoding='utf-8') as f:
+    json.dump(history, f, indent=4)
+
+# 3. Подготовка данных для графика
+df = pd.DataFrame(list(history.items()), columns=['Date', 'Solved'])
+df['Date'] = pd.to_datetime(df['Date'])
+df = df.sort_values('Date')
+
+# 4. Отрисовка линейного графика
 plt.figure(figsize=(9, 4.5), dpi=150)
-plt.style.use('dark_background')  # Тёмная тема под стиль GitHub
+plt.style.use('dark_background')
 
-bars = plt.barh(df['Category'], df['Solved'], color='#2ea44f', edgecolor='white', linewidth=0.8)
+# Линия и точки
+plt.plot(df['Date'], df['Solved'], marker='o', color='#2ea44f', linewidth=2.5, markersize=6, label='Tasks Solved')
+plt.fill_between(df['Date'], df['Solved'], color='#2ea44f', alpha=0.2)  # Заливка под графиком
 
-# Настройки заголовка и осей
-plt.title(f'Rosalind Progress: {total_solved} Tasks Solved', fontsize=14, fontweight='bold', pad=15)
-plt.xlabel('Number of Solved Problems', fontsize=10)
-plt.xlim(0, max(df['Solved'].max() + 3, 10))
-plt.gca().invert_yaxis()  # Верхняя категория вверху
-
-# Подписи значений на барах
-for bar in bars:
-    width = bar.get_width()
-    plt.text(width + 0.2, bar.get_y() + bar.get_height()/2, f'{int(width)}', 
-             va='center', ha='left', color='white', fontweight='bold', fontsize=10)
-
+# Оформление
+plt.title(f'Overall Progress Over Time (Total: {total_solved})', fontsize=14, fontweight='bold', pad=15)
+plt.xlabel('Date', fontsize=10)
+plt.ylabel('Total Solved Tasks', fontsize=10)
+plt.grid(True, linestyle='--', alpha=0.3)
+plt.gcf().autofmt_xdate()  # Авто-наклон дат по оси X
 plt.tight_layout()
 
-# 3. Сохранение картинки
-os.makedirs('assets', exist_ok=True)
-plt.savefig('assets/stats.png', transparent=True)
+plt.savefig('assets/progress_timeline.png', transparent=True)
