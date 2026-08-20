@@ -37,4 +37,4 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 
 ---
 
-![Rosalind Statistics](./assets/stats_histogram.png)
+![Rosalind Statistics](./assets/my_stats.png)
