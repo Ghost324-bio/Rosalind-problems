@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-# 1. Сбор данных (подсчет файлов в папках src/...)
+# 1. Сбор данных
 categories = {
     'Python Village': 'src/Python_Village',
     'Bioinformatics Stronghold': 'src/Bioinformatic_Stronghold',
@@ -22,49 +22,55 @@ for category, path in categories.items():
     else:
         data[category] = 0
 
-# Создаем DataFrame и сортируем (для горизонтальных столбцов лучше сортировать ascending)
 df = pd.DataFrame(list(data.items()), columns=['Category', 'Solved'])
-df = df.sort_values(by='Solved', ascending=True) 
+df = df.sort_values(by='Solved', ascending=True)
 
-# 2. Отрисовка гистограммы (ГОРИЗОНТАЛЬНЫХ СТОЛБЦОВ)
-plt.figure(figsize=(10, 5), dpi=150)
-plt.style.use('dark_background') # Тёмная тема
+# 2. Настройка стиля и сплошного фона
+plt.style.use('dark_background')
+fig, ax = plt.subplots(figsize=(9, 4.5), dpi=150)
 
-# Цветовая палитра
-colors = plt.colormaps['viridis'](np.linspace(0.2, 0.9, len(df)))
+# Задаем сплошной темный фон (в стиле темы GitHub)
+dark_bg = '#0d1117'
+fig.patch.set_facecolor(dark_bg)
+ax.set_facecolor(dark_bg)
 
-# Рисуем столбцы (barh = bar horizontal)
-bars = plt.barh(df['Category'], df['Solved'], color=colors, edgecolor='none')
+# Цветовая гамма столбцов
+colors = plt.colormaps['viridis'](np.linspace(0.3, 0.85, len(df)))
 
-# Заголовок с общим числом задач
-plt.title(f'Rosalind Problems Solved: {total_solved}', fontsize=16, fontweight='bold', pad=20)
+# Рисуем столбцы
+bars = ax.barh(df['Category'], df['Solved'], color=colors, height=0.55, edgecolor='none')
 
-# Полностью убираем оси и сетку (для чистоты)
-plt.gca().get_xaxis().set_visible(False)
-plt.gca().spines['top'].set_visible(False)
-plt.gca().spines['right'].set_visible(False)
-plt.gca().spines['bottom'].set_visible(False)
-plt.gca().spines['left'].set_visible(False)
-plt.gca().set_xticks([])
+# Заголовок
+ax.set_title(f'Rosalind Progress: {total_solved} Tasks Solved', 
+             fontsize=15, fontweight='bold', pad=18, color='#ffffff')
 
-# Убираем деления и настраиваем шрифт категорий
-plt.tick_params(axis='y', length=0, labelsize=12)
+# Настройка граница и осей
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
+ax.get_xaxis().set_visible(False)
 
-# Добавляем актуальные числа на каждый столбец
+ax.tick_params(axis='y', length=0, labelsize=11, labelcolor='#e6edf3')
+
+# Устанавливаем запас по оси X, чтобы числа не вылезали за край
+max_val = max(df['Solved'].max(), 1)
+ax.set_xlim(0, max_val + max(2, max_val * 0.2))
+
+# Подписи значений на столбцах
 for bar in bars:
     width = bar.get_width()
-    # Числа появляются справа от столбца (+0.3 отступа)
-    plt.text(width + 0.3, 
-             bar.get_y() + bar.get_height()/2, 
-             f'{int(width)}', 
-             va='center', 
-             ha='left', 
-             color='white', 
-             fontweight='bold', 
-             fontsize=11)
+    ax.text(width + 0.2, 
+            bar.get_y() + bar.get_height()/2, 
+            f'{int(width)}', 
+            va='center', 
+            ha='left', 
+            color='#ffffff', 
+            fontweight='bold', 
+            fontsize=11)
 
 plt.tight_layout()
 
-# 3. Сохранение картинки (убедитесь в правильности имени файла)
+# 3. Сохранение без прозрачности (facecolor сохраняет темный фон)
 os.makedirs('assets', exist_ok=True)
-plt.savefig('assets/my_stats.png', transparent=True, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('assets/my_stats.png', facecolor=fig.get_facecolor(), edgecolor='none', bbox_inches='tight', pad_inches=0.2)
