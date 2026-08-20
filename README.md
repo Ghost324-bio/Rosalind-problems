@@ -33,5 +33,6 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **REVC** | Complementing a Strand of DNA | String Manipulation | $O(N)$ | $O(N)$ | [REVC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/3f44d451583cdf0d52aacee8b718013ebef124ca/Bioinformatic%20Stronghold/REVC.py) | **19.08.2026** |
 | **INI** | Intro to Bioinformatics Armory | Biopython Basics | $O(N)$ | $O(1)$ | [INI.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/c1cab8cad9a297d06e0d9a4d2a9ddbf5baa5118e/Bioinformatic%20Armory/INI/INI.py) | **19.08.2026** |
 | **GBK** | GenBank Introduction | NCBI Entrez API | $O(1)$ | $O(1)$ | [GBK.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/b011946e81dc7f80cf2874b73ce8035535d7e52b/Bioinformatic%20Armory/GBK/GBK.py) | **19.08.2026** |
+| **FIB** | Rabbits and Recureance Relations | Dynamic Programminf | $O(N)$ | $O(1)$ | [FIB.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/a78cc8d4745ee019714c9597fcfe828788cc741e/Bioinformatic%20Stronghold/FIB.py) | **20.08.2026** | 
 
 ---
