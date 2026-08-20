@@ -34,7 +34,7 @@ plt.figure(figsize=(10, 5), dpi=150)
 plt.style.use('dark_background') # Тёмная тема под GitHub
 
 # Цветовая палитра
-colors = plt.cm.get_cmap('viridis')(np.linspace(0.2, 0.9, len(df)))
+colors = plt.colormaps['viridis'](np.linspace(0.2, 0.9, len(df)))
 
 # Рисуем горизонтальные столбцы
 bars = plt.barh(df['Category'], df['Solved'], color=colors, edgecolor='none')
