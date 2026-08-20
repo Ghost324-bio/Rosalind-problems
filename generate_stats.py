@@ -67,4 +67,4 @@ plt.tight_layout()
 
 # 3. Сохранение картинки (убедитесь в правильности имени файла)
 os.makedirs('assets', exist_ok=True)
-plt.savefig('assets/stats_histogram.png', transparent=True, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('assets/my_stats.png', transparent=True, bbox_inches='tight', pad_inches=0.1)
