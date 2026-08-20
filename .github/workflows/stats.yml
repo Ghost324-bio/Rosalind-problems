@@ -9,7 +9,7 @@ on:
       - 'assets/**'
   schedule:
     - cron: '0 0 * * *' # Автозапуск каждый день в 00:00 UTC
-  workflow_dispatch:     # Добавляет кнопку "Run workflow" для ручного запуска из интерфейса GitHub
+  workflow_dispatch:     # Кнопка для ручного запуска из UI
 
 jobs:
   update-repo:
@@ -31,14 +31,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas matplotlib
 
-      - name: Update README Table
-        run: python update_readme.py
-
       - name: Generate Stats & Progress Graph
         run: python generate_stats.py
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: auto-update README and progress stats [skip ci]"
-          file_pattern: "README.md assets/progress_timeline.png assets/history.json"
+          commit_message: "docs: auto-update progress stats [skip ci]"
+          file_pattern: "assets/progress_timeline.png assets/history.json"
