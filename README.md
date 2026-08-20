@@ -36,3 +36,5 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **FIB** | Rabbits and Recurrence Relations | Dynamic Programming | $O(N)$ | $O(1)$ | [FIB.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/a78cc8d4745ee019714c9597fcfe828788cc741e/Bioinformatic%20Stronghold/FIB.py) | **20.08.2026** | 
 
 ---
+
+![Rosalind Timeline](./assets/progress_timeline.png)
