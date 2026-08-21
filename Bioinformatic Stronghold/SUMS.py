@@ -1,6 +1,6 @@
 """
 This script solves the SUBS problem (Finding a Motif in DNA)
-It runs in O(N * M) time complexity and maintains O(1) memory overhead
+It runs in O(N * M) time complexity and maintains O(N) memory overhead
 'N' means DNA length, 'M' means motif length
 """
 
@@ -22,7 +22,7 @@ for pair in batched(lines_stream, 2):
     dna, motif = pair
     motif_len = len(motif)
     
-    # we use a sliding index window instead of heavy suffixes to keep memory O(1)
+    # we use a sliding index window instead of heavy suffixes to keep memory low
     for index in range(len(dna)):
         if dna[index : index + motif_len] == motif:
             # our case requires 1-based indexing
