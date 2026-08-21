@@ -37,6 +37,6 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **FIBD** | Mortal Fibonacci Rabbits | Dynamic Programming | $O(N*M)$ | $O(M)$ | [FIBD.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/1c1cb32e3e1bf7c596e0a920e6efba449cbd8eb3/Bioinformatic%20Stronghold/FIBD.py) | **20.08.2026** |
 | **GC** | Computing GC Content | Readind and working with FASTA | $O(1)$ | $O(N)$ | [GC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/7bbf325ee5c653c519e02d1fc64e37a4d7b9ea0d/Bioinformatic%20Stronghold/CG.py) | **21.08.2026** |
 | **HAMM** | Counting Point Mutations | Compare pair of DNA | $O(1)$ | $O(N)$ | [HAMM.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/795b83f0dc647c1a346fce4ff07c8f6fab3bf9c1/Bioinformatic%20Stronghold/HAMM.py) | **21.08.2026** |
-| **SUMS** | Finding a Motif in DNA | Algotithm of sliding window | $O(1)$ | $O(N*M) |
+| **SUMS** | Finding a Motif in DNA | Algotithm of sliding window | $O(1)$ | $O(N*M) | [SUMS.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/77f03b497c1b9f08069780957dfed1f8bb17d681/Bioinformatic%20Stronghold/SUMS.py) | **21.08.2026** |
 
 ---
