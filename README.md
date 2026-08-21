@@ -35,5 +35,6 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **GBK** | GenBank Introduction | NCBI Entrez API | $O(1)$ | $O(1)$ | [GBK.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/b011946e81dc7f80cf2874b73ce8035535d7e52b/Bioinformatic%20Armory/GBK/GBK.py) | **19.08.2026** |
 | **FIB** | Rabbits and Recurrence Relations | Dynamic Programming | $O(N)$ | $O(1)$ | [FIB.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/a78cc8d4745ee019714c9597fcfe828788cc741e/Bioinformatic%20Stronghold/FIB.py) | **20.08.2026** |
 | **FIBD** | Mortal Fibonacci Rabbits | Dynamic Programming | $O(N*M)$ | $O(M)$ | [FIBD.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/1c1cb32e3e1bf7c596e0a920e6efba449cbd8eb3/Bioinformatic%20Stronghold/FIBD.py) | **20.08.2026** |
+| **GC** | Computing GC Content | Readind and working with FASTA | $O(1)$ | $O(N)$ | [GC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/7bbf325ee5c653c519e02d1fc64e37a4d7b9ea0d/Bioinformatic%20Stronghold/CG.py) | **21.08.2026** |
 
 ---
