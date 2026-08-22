@@ -37,7 +37,7 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **FIBD** | Mortal Fibonacci Rabbits | Dynamic Programming | $O(N*M)$ | $O(M)$ | [FIBD.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/1c1cb32e3e1bf7c596e0a920e6efba449cbd8eb3/Bioinformatic%20Stronghold/FIBD.py) | **20.08.2026** |
 | **GC** | Computing GC Content | Readind and working with FASTA | $O(1)$ | $O(N)$ | [GC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/7bbf325ee5c653c519e02d1fc64e37a4d7b9ea0d/Bioinformatic%20Stronghold/CG.py) | **21.08.2026** |
 | **HAMM** | Counting Point Mutations | Compare pair of DNA | $O(1)$ | $O(N)$ | [HAMM.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/795b83f0dc647c1a346fce4ff07c8f6fab3bf9c1/Bioinformatic%20Stronghold/HAMM.py) | **21.08.2026** |
-| **SUMS** | Finding a Motif in DNA | Algotithm of sliding window | $O(N)$ | $O(N*M) | [SUMS.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/77f03b497c1b9f08069780957dfed1f8bb17d681/Bioinformatic%20Stronghold/SUMS.py) | **21.08.2026** |
+| **SUMS** | Finding a Motif in DNA | Algotithm of sliding window | $O(N)$ | $O(N*M)$ | [SUMS.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/77f03b497c1b9f08069780957dfed1f8bb17d681/Bioinformatic%20Stronghold/SUMS.py) | **21.08.2026** |
 | **IPRB** | Mendel's First Law | Counting Dominant Probability | $O(1)$ | $O(N)$ | [IPRB.py]() | **22.08.2026** |
 
 ---
@@ -46,8 +46,8 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 
 | ID | Same case | Difference of solving | Time | Space | Solution | When it solved |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| **BA1A** | `SUBS` | 90% same + transformed indexation of motifs to counting it | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
-| **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(Nmax*k)$ `(per one sequence)` | $O(N*k) | ... | **22.08.2026** |
+| **BA1A** | `SUBS` | 90% same + transformed indexation of motifs to counting it | $O(N)$ | $O(N*M)$ | ... | **22.08.2026** |
+| **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(Nmax*k)$ `(per one sequence)` | $O(N*k)$ | ... | **22.08.2026** |
 | **BA1C** | `DNA` | 100% same | $O(N)$ | $O(1)$ | ... | **22.08.2026** |
-| **BA1D** | `SUBS` | 100% same | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
+| **BA1D** | `SUBS` | 100% same | $O(N)$ | $O(N*M)$ | ... | **22.08.2026** |
 
