@@ -10,13 +10,13 @@ This project serves as a personal tracker and portfolio demonstrating software e
 
 ---
 
-**Progress now: 18 of 318**
+**Progress now: 23 of 318**
 
 My Rosalind link: https://rosalind.info/users/Ghost324/
 
 ---
 
-## 🗂️ Solved Problems
+## 🗂️ Solved unique problems
 
 | ID | Title | Topic | Time | Space | Solution | **When it solved** |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -38,5 +38,16 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | **GC** | Computing GC Content | Readind and working with FASTA | $O(1)$ | $O(N)$ | [GC.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/7bbf325ee5c653c519e02d1fc64e37a4d7b9ea0d/Bioinformatic%20Stronghold/CG.py) | **21.08.2026** |
 | **HAMM** | Counting Point Mutations | Compare pair of DNA | $O(1)$ | $O(N)$ | [HAMM.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/795b83f0dc647c1a346fce4ff07c8f6fab3bf9c1/Bioinformatic%20Stronghold/HAMM.py) | **21.08.2026** |
 | **SUMS** | Finding a Motif in DNA | Algotithm of sliding window | $O(N)$ | $O(N*M) | [SUMS.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/77f03b497c1b9f08069780957dfed1f8bb17d681/Bioinformatic%20Stronghold/SUMS.py) | **21.08.2026** |
+| **IPRB** | Mendel's First Law | Counting Dominant Probability | $O(1)$ | $O(N)$ | [IPRB.py]() | **22.08.2026** |
 
 ---
+
+## 🗂️ Bioinformatics Textbook Track problems (Bioinformatics Algorithms: An Active-Learning Approach by Phillip Compeau & Pavel Pevzner)
+
+| ID | Same case | Difference of solving | Time | Space | Solution | When it solved |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| **BA1A** | `SUBS` | 90% same + transformed indexation of motifs to counting it | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
+| **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(N_max*k)$ `(per one sequence) | $O(N*k) | **22.08.2026** |
+| **BA1C** | `DNA` | 100% same | $O(N)$ | $O(1)$ | ... | **22.08.2026** |
+| **BA1D** | `SUBS` | 100% same | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
+
