@@ -47,7 +47,7 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | ID | Same case | Difference of solving | Time | Space | Solution | When it solved |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | **BA1A** | `SUBS` | 90% same + transformed indexation of motifs to counting it | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
-| **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(N_max*k)$ `(per one sequence) | $O(N*k) | **22.08.2026** |
+| **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(N_m_a_x*k)$ `(per one sequence)` | $O(N*k) | ... | **22.08.2026** |
 | **BA1C** | `DNA` | 100% same | $O(N)$ | $O(1)$ | ... | **22.08.2026** |
 | **BA1D** | `SUBS` | 100% same | $O(N)$ | $O(N*M) | ... | **22.08.2026** |
 
