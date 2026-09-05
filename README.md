@@ -48,6 +48,6 @@ My Rosalind link: https://rosalind.info/users/Ghost324/
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | **BA1A** | `SUBS` | 90% same + transformed indexation of motifs to counting it | $O(N)$ | $O(N*M)$ | ... | **5.09.2026** |
 | **BA1B** | `SUBS` | much more unique and depends on finding most popular motifs | $O(Nmax*k)$ `(per one sequence)` | $O(N*k)$ | ... | **5.09.2026** |
-| **BA1C** | `DNA` | 100% same | $O(N)$ | $O(1)$ | ... | **5.09.2026** |
+| **BA1C** | `DNA` | 100% same | $O(N)$ | $O(1)$ | [BA1C.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/3d95faf275d0a33a0c41940bc1e1476a3f3a3154/Bioinformatic%20Textbook%20Track/BA1C.py) | **5.09.2026** |
 | **BA1D** | `SUBS` | 100% same | $O(N)$ | $O(N*M)$ | [BA1D.py](https://github.com/Ghost324-bio/Rosalind-problems/blob/9c9bf6e4dd530ed9b6d2f6d66e58177ddb16dc7f/Bioinformatic%20Textbook%20Track/BA1D.py) | **5.09.2026** |
 
